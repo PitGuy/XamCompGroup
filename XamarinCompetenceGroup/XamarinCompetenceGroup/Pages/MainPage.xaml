@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d" x:Class="XamarinCompetenceGroup.Pages.MainPage" 
+             xmlns:local="clr-namespace:XamarinCompetenceGroup.CustomControls" 
+             NavigationPage.HasNavigationBar="False">
+<ContentPage.Resources>
+        <Style x:Key="btnStyle" TargetType="Button">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="WidthRequest" Value="120" />
+            <Setter Property="HeightRequest" Value="100" />
+            <Setter Property="Command" Value="{Binding NavigateCommand}" />
+            <Setter Property="CommandParameter" Value="{Binding Source={RelativeSource Self}, Path=Text}" />
+        </Style>
+    </ContentPage.Resources>
+    <FlexLayout Direction="Column">
+        <FlexLayout Direction="Row" HeightRequest="100">
+            <local:HeaderView ></local:HeaderView>
+        </FlexLayout>
+        <FlexLayout Direction="Row" HeightRequest="100">
+            <Button BackgroundColor="SeaGreen" Text="StackLayout" Style="{StaticResource Key=btnStyle}" />
+            <Button BackgroundColor="LightBlue" Text="AbsoluteLayout" Style="{StaticResource Key=btnStyle}" />
+            <Button BackgroundColor="LightPink" Text="RelativeLayout" Style="{StaticResource Key=btnStyle}" />
+            <Button BackgroundColor="LightGreen" Text="Recources" Style="{StaticResource Key=btnStyle}" />
+        </FlexLayout>
+        <FlexLayout Direction="Row" HeightRequest="100">
+            <Button BackgroundColor="LightCoral" Text="CarouselView" Style="{StaticResource Key=btnStyle}" />
+            <Button BackgroundColor="SeaGreen" Text="ListView" Style="{StaticResource Key=btnStyle}" />
+            <Button BackgroundColor="LightBlue" Text="CollectionView" Style="{StaticResource Key=btnStyle}" />
+            <Button BackgroundColor="LightPink" Text="BindableObjcetPage" Style="{StaticResource Key=btnStyle}" />
+        </FlexLayout>
+    </FlexLayout>
+</ContentPage>

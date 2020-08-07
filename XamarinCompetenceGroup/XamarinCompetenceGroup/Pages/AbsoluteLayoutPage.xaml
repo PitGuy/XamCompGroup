@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinCompetenceGroup.Pages.AbsoluteLayoutPage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <BoxView Color="LightBlue" AbsoluteLayout.LayoutBounds="70, 70, 200, 70" />
+            <Label Text="Title" FontSize="Large" AbsoluteLayout.LayoutBounds="110, 90, 150, 60" />
+            <Label Text="Bodddy" FontSize="Medium" AbsoluteLayout.LayoutBounds="70, 150, AutoSize, AutoSize" />
+            <BoxView Color="Red" AbsoluteLayout.LayoutBounds=".1, .2, 50, 80"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+            <BoxView Color="Green" AbsoluteLayout.LayoutBounds="1, .2, 50, 80"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+            <BoxView Color="Blue" AbsoluteLayout.LayoutBounds=".4, .8, .2, .2" 
+                AbsoluteLayout.LayoutFlags="All" />
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

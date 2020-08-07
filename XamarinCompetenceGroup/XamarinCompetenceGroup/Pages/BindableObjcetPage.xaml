@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:XamarinCompetenceGroup.CustomControls"
+             mc:Ignorable="d"
+             x:Class="XamarinCompetenceGroup.Pages.BindableObjcetPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.Padding>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <OnPlatform.iOS>
+                        <Thickness Left="0" Top="20" Right="0" Bottom="0" />
+                    </OnPlatform.iOS>
+                    <OnPlatform.Android>
+                        <Thickness Left="0" Top="0" Right="0" Bottom="0" />
+                    </OnPlatform.Android>
+                </OnPlatform>
+            </StackLayout.Padding>
+            <local:TagLabel x:Name="tagLabel" Tag="{Binding Path=Text}" FontSize="Large">
+                <Label.Text>
+                    <OnPlatform x:TypeArguments="x:String" iOS="iOS Tag Label" Android="Android Tag Label"/>
+                </Label.Text>
+            </local:TagLabel>
+            <Entry x:Name="entryBox" />
+            <Label x:Name="label" BindingContext="{x:Reference Name=tagLabel}" Text="{Binding Path=Tag}" FontSize="Large" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

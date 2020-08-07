@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\vkoz\\source\\repos\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup.Android\\XamarinCompetenceGroup.Android.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\vkoz\\source\\repos\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup.Android\\XamarinCompetenceGroup.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vkoz\\source\\repos\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup.Android\\XamarinCompetenceGroup.Android.csproj",
+        "projectName": "XamarinCompetenceGroup.Android",
+        "projectPath": "C:\\Users\\vkoz\\source\\repos\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup.Android\\XamarinCompetenceGroup.Android.csproj",
+        "packagesPath": "C:\\Users\\vkoz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vkoz\\source\\repos\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vkoz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dgsit/Infrastructure/_packaging/phoenix-dependencies/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dgsit/_packaging/phoenix/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dgsit/_packaging/test-phoenix/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dgsrdcloud/_packaging/remote-assistance/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dgsrdcloud/a2d747d3-6419-4d01-931a-52b0d729f04f/_packaging/app-remote-assistance-dependencies/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dgsrdcloud/a2d747d3-6419-4d01-931a-52b0d729f04f/_packaging/test-remote-assistance/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "C:\\Users\\vkoz\\source\\repos\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup.csproj": {
+                "projectPath": "C:\\Users\\vkoz\\source\\repos\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.5.0.495, )"
+            }
+          }
+        }
+      }
+    },
+    "C:\\Users\\vkoz\\source\\repos\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vkoz\\source\\repos\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup.csproj",
+        "projectName": "XamarinCompetenceGroup",
+        "projectPath": "C:\\Users\\vkoz\\source\\repos\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup.csproj",
+        "packagesPath": "C:\\Users\\vkoz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vkoz\\source\\repos\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\XamarinCompetenceGroup\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vkoz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dgsit/Infrastructure/_packaging/phoenix-dependencies/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dgsit/_packaging/phoenix/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dgsit/_packaging/test-phoenix/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dgsrdcloud/_packaging/remote-assistance/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dgsrdcloud/a2d747d3-6419-4d01-931a-52b0d729f04f/_packaging/app-remote-assistance-dependencies/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dgsrdcloud/a2d747d3-6419-4d01-931a-52b0d729f04f/_packaging/test-remote-assistance/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FreshMvvm": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[3.2.8, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.5.0.495, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Name="page"
+             x:Class="XamarinCompetenceGroup.Pages.ListViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding Meetings}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Title}"
+                                  Detail="{Binding Author, StringFormat='Author: {0}'}"
+                                  TextColor="Red"
+                                  DetailColor="Green" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Meetings}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell ImageSource="https://cdn.iconscout.com/icon/free/png-512/xamarin-3-569531.png"
+                                   Text="{Binding Title}"
+                                   Detail="{Binding Author, StringFormat='Author: {0}'}"
+                                   TextColor="Red"
+                                   DetailColor="Green" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Add Item"
+                    Command="{Binding NewMeetingCommand}" />
+            <ListView ItemsSource="{Binding Meetings}"
+                      HasUnevenRows="True"
+                      SelectionMode="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BackgroundColor="Green">
+                                <StackLayout Orientation="Vertical"
+                                             BackgroundColor="AliceBlue">
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer NumberOfTapsRequired="1"
+                                                              Command="{Binding Path=BindingContext.MeetingTapCommand,Source={x:Reference page}}"
+                                                              CommandParameter="{Binding .}" />
+                                    </StackLayout.GestureRecognizers>
+                                    <Label Text="{Binding Title}" />
+                                    <Label Text="{Binding Author}" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

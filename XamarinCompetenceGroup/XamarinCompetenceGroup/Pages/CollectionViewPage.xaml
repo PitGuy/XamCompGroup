@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="XamarinCompetenceGroup.Pages.CollectionViewPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <CollectionView ItemsSource="{Binding Meetings}" HeightRequest="300">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="2" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame BackgroundColor="Red">
+                                <StackLayout Orientation="Vertical" BackgroundColor="AliceBlue">
+                                    <Label Text="{Binding Title}" />
+                                    <Label Text="{Binding Author}" />
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <TableView Intent="Settings" HeightRequest="300">
+                    <TableRoot>
+                        <TableSection Title="OpenTok">
+                            <SwitchCell Text="Video turn on default" />
+                            <SwitchCell Text="Load speaker" On="true" />
+                        </TableSection>
+                        <TableSection Title="Goddzila">
+                            <SwitchCell Text="Enabled" />
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+                <StackLayout BindableLayout.ItemsSource="{Binding Meetings}">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Vertical" BackgroundColor="AliceBlue">
+                                <Label Text="{Binding Title}" />
+                                <Label Text="{Binding Author}" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

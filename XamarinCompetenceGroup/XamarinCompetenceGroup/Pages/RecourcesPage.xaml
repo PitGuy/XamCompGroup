@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinCompetenceGroup.Pages.RecourcesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Color x:Key="text1Color">#004D40</Color>
+                    <Color x:Key="back1Color">#80CBC4</Color>
+                    <x:Double x:Key="fontSize">24</x:Double>
+                    <Style x:Key="buttonStyle"
+                           TargetType="Button">
+                        <Setter Property="TextColor"
+                                Value="#004D40" />
+                        <Setter Property="BackgroundColor"
+                                Value="#80CBC4" />
+                        <Setter Property="FontSize"
+                                Value="Large" />
+                    </Style>
+                    <Style TargetType="Button">
+                        <Setter Property="TextColor"
+                                Value="{StaticResource Key=text1Color}" />
+                        <Setter Property="BackgroundColor"
+                                Value="#FFFFFF" />
+                        <Setter Property="FontSize"
+                                Value="Large" />
+                    </Style>
+                    <Style x:Key="greenButtonStyle"
+                           TargetType="Button"
+                           BasedOn="{StaticResource Key=buttonStyle}">
+                        <Setter Property="TextColor"
+                                Value="#KK4D40" />
+                        <Setter Property="BackgroundColor"
+                                Value="#00FF00" />
+                    </Style>
+                    <Style x:Key="entryStyle"
+                           TargetType="Entry">
+                        <Style.Triggers>
+                            <Trigger Property="Entry.IsFocused"
+                                     Value="True"
+                                     TargetType="Entry">
+                                <Setter Property="TextColor"
+                                        Value="Bisque" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                    <StyleSheet>
+                        <![CDATA[
+^contentpage {
+    background-color: lightcyan;
+}
+ 
+stacklayout {
+    margin: 15;
+    padding: 10;
+}
+ 
+label {
+    color: black;
+}
+ 
+#header {
+    font-size: 32;
+    font-weight:bold;
+}
+ 
+.english {
+    font-weight: bold;
+    font-size: large;
+    color: darkblue;
+}
+ 
+.ukrainian {
+    font-size:medium;
+}
+ 
+stacklayout label {
+    font-family:Verdana;
+}
+            ]]>
+                    </StyleSheet>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+            <Label Text="resources"
+                    TextColor="{StaticResource Key=textColor}"
+                    BackgroundColor="{StaticResource Key=backColor}"
+                    FontSize="{StaticResource Key=fontSize}" />
+            <Button Text="buttonStyle"
+                    Style="{StaticResource buttonStyle}" />
+            <Button Text="general style" />
+            <Button Text="greenButton"
+                    Style="{StaticResource greenButtonStyle}" />
+            <Entry FontSize="Large"
+                   Text="Przyponi o validacji"
+                   Style="{StaticResource Key=entryStyle}" />
+            <Label x:Name="header"
+                   StyleId="header"
+                   Text="Words" />
+            <Label Text="apple"
+                   StyleClass="english" />
+            <Label Text="яблоко"
+                   StyleClass="ukrainian" />
+            <Label Text="house"
+                   StyleClass="english" />
+            <Label Text="дім"
+                   StyleClass="ukrainian" />
+            <Label Text="bread"
+                   StyleClass="english" />
+            <Label Text="хліб"
+                   StyleClass="ukrainian" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
